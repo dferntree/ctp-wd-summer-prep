@@ -1,0 +1,84 @@
+/*Generated CSS pixel template*/
+
+/* Reset default margin/padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Make html and body take full viewport height */
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Press Start 2P', cursive;
+  background-color: #222; /* dark background for contrast */
+  color: #eee; /* light text */
+}
+
+/* Body uses flexbox to center main vertically and horizontally */
+body {
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  height: 100vh;           /* full viewport height */
+  padding: 1rem;
+}
+
+/* Make main fill the full width and height of viewport minus padding */
+main {
+  background: #333;
+  width: 100vw;            /* full viewport width */
+  max-width: 900px;        /* optional max width */
+  height: 90vh;            /* fill most of viewport height */
+  border-radius: 12px;
+  padding: 2rem;
+  overflow-y: auto;        /* scroll if content overflows vertically */
+  box-shadow: 0 0 20px rgba(0,0,0,0.7);
+}
+
+/* Your habit list takes remaining space */
+#habit-list {
+  margin-top: 1rem;
+  list-style: none;
+  overflow-y: auto;
+  max-height: 60vh;        /* limits height, scroll if needed */
+  padding-right: 0.5rem;   /* space for scrollbar */
+}
+
+/* Optional: style inputs and buttons nicely */
+input, select, button {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  margin: 0.2rem 0.5rem 0.2rem 0;
+  border-radius: 6px;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+  background: #556;
+  color: #eee;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: #778;
+}
+
+#daily-habit-list li, #weekly-habit-list li {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  color: white; /* to keep text readable on blue */
+}
+
+#daily-container h2, #weekly-container h2 {
+  margin-top: 1.5rem;    
+  margin-bottom: 1.5rem; 
+}
+
+.habit-item > div {
+    margin-top : 0.5rem;
+}

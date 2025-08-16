@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habit Tracker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <h1>Habit Tracker</h1>
+
+    <div id = "date-picker-container">
+      <label for = "completion-date"> Select date to mark completion:</label>
+      <input type = "date" id = "completion-date"/>
+    </div>
+
+    <div id = "habit-form-container">
+      <form id = "habit-form">
+      <input type = "text" id = "habit-input" placeholder = "Enter a habit" required />
+      <input type="number" id="habit-target" placeholder="Target (optional)" min="1" />
+      <select id = "habit-frequency">
+        <option value = "daily">Daily</option>
+        <option value = "weekly">Weekly</option>
+      </select>
+      <button type = "submit">Add Habit</button>
+    </form>
+    </div>
+
+    <div id="daily-container">
+      <h2>Daily Habits</h2>
+      <ul id="daily-habit-list"></ul>
+    </div>
+
+    <div id="weekly-container">
+      <h2>Weekly Habits</h2>
+      <ul id="weekly-habit-list"></ul>
+    </div>
+
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
